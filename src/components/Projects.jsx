@@ -5,39 +5,44 @@ const Projects = () => {
   const projects = [
     {
       title: 'Digital Signature Web App',
-      description: 'A responsive digital signature web app made using MERN Stack. Upload the PDF you want to sign, add your signature, and download it seamlessly.',
-      tags: ['MongoDB', 'Express', 'React', 'Node.js', 'JWT'],
+      description: [
+        'Developed a Digital Signature Application enabling users to securely upload, sign, and verify documents.',
+        'Implemented secure authentication and document integrity using encrypted signature workflows, and JWT-based user sessions to prevent unauthorized access.'
+      ],
+      tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'JWT', ],
       category: 'Full Stack',
       link: null
     },
     {
       title: 'Freelancing Platform',
-      description: 'A comprehensive freelancing website with dual role accounts (Freelancer & Client). Features gig creation, order management, and a complete freelancer dashboard for tracking orders and payments.',
-      tags: ['MERN Stack', 'JWT Auth', 'REST API', 'Dashboard'],
+       description: [
+        'Developed a responsive freelancing platform supporting two user roles — freelancer and client — with secure account creation and role-based access.',
+        'Implemented gig creation, ordering workflow, and a dedicated freelancer dashboard to manage incoming orders, payments, and activity data efficiently.'
+      ],
+      tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'REST APIs',],
       category: 'Full Stack',
       link: null
     },
     {
       title: 'Face Detection using OpenCV',
-      description: 'Python project built using Flask, OpenCV, and NumPy that detects faces and predicts gender from images or webcam video using deep learning models.',
-      tags: ['Python', 'Flask', 'OpenCV', 'NumPy', 'Deep Learning'],
+      description: [
+        'Developed a Python-based gender detection system using Flask, OpenCV, and NumPy to analyze images and real-time webcam video.',
+        'Implemented deep learning–based face detection and gender classification, displaying prediction results through a simple and interactive web interface.'
+      ],
+      tags: ['Python', 'Flask', 'NumPy', 'OpenCV', 'HTML', 'CSS', 'Deep Learning'],
       category: 'AI/ML',
       link: null
     },
     {
       title: 'Object Detection using YOLOv8',
-      description: 'Flask-based YOLOv8 object detection app with image upload and real-time webcam detection using OpenCV, enabling fast and accurate detection of people and objects.',
+       description: [
+        'Developed a Flask-based YOLOv8 object detection application supporting image uploads and real-time webcam detection using OpenCV.',
+        'Implemented high-performance object recognition to accurately detect people and multiple objects with fast inference and reliable results.'
+      ],
       tags: ['Python', 'Flask', 'YOLOv8', 'OpenCV', 'Computer Vision'],
       category: 'AI/ML',
       link: null
     },
-    {
-      title: 'Weather App using OpenWeather API',
-      description: 'A responsive PWA web app built with Flask, JavaScript, HTML, and CSS. Features real-time weather data, location-based detection, city search, and hourly/multi-day forecasts.',
-      tags: ['Flask', 'JavaScript', 'PWA', 'API Integration'],
-      category: 'AI/ML',
-      link: null
-    }
   ];
 
   return (
