@@ -10,7 +10,8 @@ const Experience = () => {
       period: '2024 - Present',
       icon: Award,
       description: [
-        'Joined as a Campus Mantri, actively developing leadership skills, learning new initiatives, and supporting students in gaining technical knowledge and growth opportunities.'
+        'Actively involved in leadership development and student engagement initiatives.',
+        'Promoted technical learning, coding culture, and awareness of GeeksforGeeks programs.',
       ]
     },
     {
@@ -20,21 +21,22 @@ const Experience = () => {
       period: 'Oct 2024 - Dec 2024',
       icon: Users,
       description: [
-        'Served as Co-Organizer for an online hackathon, assisting in planning, coordination, and smooth execution of the event.',
-        'Managed participant onboarding, team coordination, and communication workflows, supporting 100+ participants throughout the hackathon.',
-        'Collaborated with the organizing team on problem statement design, mentor coordination, submission evaluation flow, and final result announcements.'
+        'Assisted in planning and executing an online hackathon with 500+ participants.',
+        'Managed participant onboarding, team coordination, and communication workflows.',
+        'Coordinated with mentors for problem statements, evaluations, and final result announcements.'
       ]
     },
     {
       title: 'Full Stack Intern',
       company: 'Labmentix',
-      location: 'Remote',
+      location: 'Remote Internship',
       period: 'Jun 2025 - Aug 2025',
       icon: Briefcase,
       description: [
-        'Joined as a Full Stack Intern as a fresher, quickly adapting to the development workflow and collaborating with the team on real-world applications.',
-        'Contributed to two full-stack projects — Freelancer Web App and Digital Signature Web App — working on frontend-backend integration and feature implementation.',
-        'Gained hands-on experience with RESTful APIs, JWT-based authentication, API testing using Postman, and debugging end-to-end application flows.'
+        'Worked on real-world full-stack web applications with frontend–backend integration.',
+        'Developed RESTful APIs and implemented JWT-based authentication and authorization.',
+        'Contributed to two major projects: Freelancer Web Application and Digital Signature Web Application.',
+        'Performed API testing and debugging using Postman to ensure smooth end-to-end workflows.'
       ]
     },
 

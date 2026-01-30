@@ -6,42 +6,45 @@ const Projects = () => {
     {
       title: 'Digital Signature Web App',
       description: [
-        'Developed a Digital Signature Application enabling users to securely upload, sign, and verify documents.',
-        'Implemented secure authentication and document integrity using encrypted signature workflows, and JWT-based user sessions to prevent unauthorized access.'
+        'Developed a secure digital signature system enabling users to upload, sign, and download document.',
+        'Integrated JWT-based authentication to prevent unauthorized access.'
       ],
       tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'JWT', ],
       category: 'Full Stack',
-      link: null
+      link: 'https://github.com/iharish17/frontend-signature'
     },
     {
       title: 'Freelancing Platform',
        description: [
-        'Developed a responsive freelancing platform supporting two user roles — freelancer and client — with secure account creation and role-based access.',
-        'Implemented gig creation, ordering workflow, and a dedicated freelancer dashboard to manage incoming orders, payments, and activity data efficiently.'
+        'Built a full-stack freelancing platform supporting freelancer and client user roles.',
+        'Implemented secure registration, login, and role-based access control.',
+        'Developed gig creation, order management, and freelancer dashboard features.',
+        'Enabled structured workflow for order tracking and activity management.'
       ],
       tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'REST APIs',],
       category: 'Full Stack',
-      link: null
+      link: 'https://github.com/iharish17/freelancersHUB'
     },
     {
-      title: 'Face Detection using OpenCV',
+      title: 'Face & Gender Detection System',
       description: [
-        'Developed a Python-based gender detection system using Flask, OpenCV, and NumPy to analyze images and real-time webcam video.',
-        'Implemented deep learning–based face detection and gender classification, displaying prediction results through a simple and interactive web interface.'
-      ],
+        'Developed a computer vision application to detect faces and predict gender from images and live webcam feed.',
+         'Utilized deep learning–based face detection models for accurate classification.'
+        ],
       tags: ['Python', 'Flask', 'NumPy', 'OpenCV', 'HTML', 'CSS', 'Deep Learning'],
       category: 'AI/ML',
-      link: null
+      link: 'https://github.com/iharish17/Face_Detection'
     },
     {
-      title: 'Object Detection using YOLOv8',
+      title: 'YOLOv8 Object Detection System',
        description: [
-        'Developed a Flask-based YOLOv8 object detection application supporting image uploads and real-time webcam detection using OpenCV.',
-        'Implemented high-performance object recognition to accurately detect people and multiple objects with fast inference and reliable results.'
+        'Built an object detection application supporting image uploads and real-time webcam detection.',
+        'Implemented YOLOv8 for fast and accurate multi-object recognition.',
+        'Achieved reliable inference performance for detecting people and common objects.'
       ],
       tags: ['Python', 'Flask', 'YOLOv8', 'OpenCV', 'Computer Vision'],
       category: 'AI/ML',
-      link: null
+      link: 'https://github.com/iharish17/Object_Detection'
     },
   ];
 

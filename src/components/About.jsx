@@ -44,7 +44,7 @@ const About = () => {
               <div className="flex items-start justify-between mb-3">
                 <div>
                   <h4 className="text-xl font-semibold text-white">B. Tech CS-AIML</h4>
-                  <p className="text-emerald-400 text-sm mt-1">Kanpur Institute of Technology</p>
+                  <p className="text-emerald-400 text-sm mt-1">Kanpur Institute of Technology, Kanpur, UP</p>
                 </div>
                 <span className="text-gray-400 text-sm">2024 - 2028</span>
               </div>
@@ -55,11 +55,22 @@ const About = () => {
               <div className="flex items-start justify-between mb-3">
                 <div>
                   <h4 className="text-xl font-semibold text-white">Class XII</h4>
-                  <p className="text-emerald-400 text-sm mt-1">Government High School Khanpur</p>
+                  <p className="text-emerald-400 text-sm mt-1">Government HSS Chhan Rorian, Kathua, J&K</p>
                 </div>
-                <span className="text-gray-400 text-sm">2024</span>
+                <span className="text-gray-400 text-sm">2023 - 2024</span>
               </div>
               <p className="text-gray-400">Percentage: <span className="text-emerald-400 font-semibold">78%</span></p>
+            </div>
+
+            <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-400/50 transition-all duration-300">
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <h4 className="text-xl font-semibold text-white">Class X</h4>
+                  <p className="text-emerald-400 text-sm mt-1">Government High School Khanpur, Kathua, J&K</p>
+                </div>
+                <span className="text-gray-400 text-sm">2021 - 2022</span>
+              </div>
+              <p className="text-gray-400">Percentage: <span className="text-emerald-400 font-semibold">90%</span></p>
             </div>
           </div>
         </div>

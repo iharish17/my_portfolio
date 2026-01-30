@@ -1,12 +1,13 @@
 import React from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { SiGeeksforgeeks } from 'react-icons/si';
 
 const Footer = () => {
   const socialLinks = [
     { icon: Github, url: 'https://github.com/iharish17', label: 'GitHub' },
     { icon: Linkedin, url: 'https://www.linkedin.com/in/harishk18', label: 'LinkedIn' },
     { icon: Mail, url: 'mailto:harishk3445@gmail.com', label: 'Email' },
-    { icon: ExternalLink, url: 'https://www.geeksforgeeks.org/profile/harishk19', label: 'GeeksforGeeks' }
+    { icon: SiGeeksforgeeks, url: 'https://www.geeksforgeeks.org/profile/harishk19', label: 'GeeksforGeeks' }
   ];
 
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Layout, Server, Database, Wrench } from 'lucide-react';
+import { Code, Layout, Server, Database, Wrench, Layers, Users  } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
@@ -12,7 +12,7 @@ const Skills = () => {
     {
       title: 'Frontend Development',
       icon: Layout,
-      skills: ['HTML', 'CSS', 'React', 'Bootstrap'],
+      skills: ['HTML', 'CSS', 'React', 'Tailwind CSS', 'JavaScript'],
       color: 'blue'
     },
     {
@@ -30,7 +30,19 @@ const Skills = () => {
     {
       title: 'Tools & Technologies',
       icon: Wrench,
-      skills: ['Git', 'GitHub', 'Postman', 'Vercel', 'Render', 'ChatGPT', 'Vite','VS Code',],
+      skills: ['Git', 'GitHub', 'Postman', 'Vercel', 'Render', 'ChatGPT','VS Code'],
+      color: 'orange'
+    },
+    {
+      title: 'Core Concepts',
+      icon: Layers,
+      skills: ['Data Structures and Algorithms', 'API Integration', 'Authentication Systems',],
+      color: 'orange'
+    },
+    {
+      title: 'Soft Skills',
+      icon: Users ,
+      skills: ['Leadership', 'Collaboration', 'Communication', 'Problem-Solving'],
       color: 'orange'
     }
   ];
