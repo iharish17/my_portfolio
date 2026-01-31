@@ -26,9 +26,9 @@ const About = () => {
             </p>
             <p className="text-gray-400 leading-relaxed">
               As a Full Stack Intern at Labmentix, I've worked on real-world applications using the MERN stack, 
-              gaining expertise in RESTful APIs, JWT authentication, and end-to-end development workflows. 
+              gaining intermediate level knowledge in RESTful APIs, JWT authentication. 
               I'm also active in the tech community as a Campus Mantri for GeeksforGeeks and have organized 
-              successful hackathons with 700+ participants.
+              successful online hackathon along with organizing committe with 500+ participants.
             </p>
             <div className="flex flex-wrap gap-3">
               <span className="px-4 py-2 bg-slate-800 text-emerald-400 rounded-lg text-sm font-medium">MERN Stack</span>

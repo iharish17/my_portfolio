@@ -30,7 +30,7 @@ const Hero = ({ onResumeClick }) => {
           </p>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-12">
             B.Tech CS-AIML Student passionate about building innovative web applications and exploring artificial intelligence. 
-            Experienced in MERN Stack development and computer vision projects.
+            Currently Campus Ambassador at GeeksforGeeks.
           </p>
         </div>
 
