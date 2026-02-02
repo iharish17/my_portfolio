@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
-import { SiGeeksforgeeks, SiDiscord } from 'react-icons/si';
+import { SiGeeksforgeeks, SiDiscord, SiInstagram  } from 'react-icons/si';
 
 const Footer = () => {
   const socialLinks = [
@@ -8,7 +8,8 @@ const Footer = () => {
     { icon: Linkedin, url: 'https://www.linkedin.com/in/harishk18', label: 'LinkedIn' },
     { icon: Mail, url: 'mailto:harishk3445@gmail.com', label: 'Email' },
     { icon: SiGeeksforgeeks, url: 'https://www.geeksforgeeks.org/profile/harishk19', label: 'GeeksforGeeks' },
-    { icon: SiDiscord, url: 'https://discord.com/channels/hey.harish', label: 'Discord' }
+    { icon: SiDiscord, url: 'https://discord.com/channels/hey.harish', label: 'Discord' },
+    { icon: SiInstagram, url: 'https://www.instagram.com/hey._harish', label: 'Instagram' }
   ];
 
   return (
