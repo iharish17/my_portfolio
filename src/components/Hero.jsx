@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail,} from 'lucide-react';
-import { SiGeeksforgeeks, SiDiscord, SiInstagram} from "react-icons/si";
+import { SiGeeksforgeeks, SiDiscord} from "react-icons/si";
 
 const Hero = ({ onResumeClick }) => {
   const socialLinks = [
@@ -9,7 +9,6 @@ const Hero = ({ onResumeClick }) => {
     { icon: Mail, url: 'mailto:harishk3445@gmail.com', label: 'Email' },
     { icon: SiGeeksforgeeks , url: 'https://www.geeksforgeeks.org/profile/harishk19', label: 'GeeksforGeeks' },
     { icon: SiDiscord, url: 'https://discord.com/channels/hey.harish', label: 'Discord' },
-    { icon: SiInstagram, url: 'https://www.instagram.com/hey._harish', label: 'Instagram' }
   ];
 
   const scrollToContact = () => {
