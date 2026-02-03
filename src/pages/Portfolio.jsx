@@ -7,6 +7,8 @@ import Projects from '../components/Projects';
 import Experience from '../components/Experience';
 import Footer from '../components/Footer';
 import ResumeModal from '../components/ResumeModal';
+import Awards from "../components/Awards";
+
 
 const Portfolio = () => {
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
@@ -14,7 +16,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'contact'];
+      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'awards', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -44,6 +46,7 @@ const Portfolio = () => {
       <Skills />
       <Projects />
       <Experience />
+      <Awards />
       <Footer />
       <ResumeModal 
         isOpen={isResumeModalOpen} 
