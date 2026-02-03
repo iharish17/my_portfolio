@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 const Header = ({ activeSection, onResumeClick }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -9,24 +9,24 @@ const Header = ({ activeSection, onResumeClick }) => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'experience', label: 'Experience' },
-    { id: 'contact', label: 'Contact' },
-    { id: 'awards', label: 'Achievements' }
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "skills", label: "Skills" },
+    { id: "projects", label: "Projects" },
+    { id: "experience", label: "Experience" },
+    { id: "awards", label: "Achievements" },
+    { id: "contact", label: "Contact" },
   ];
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
     }
   };
@@ -34,13 +34,15 @@ const Header = ({ activeSection, onResumeClick }) => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-slate-950/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        isScrolled
+          ? "bg-slate-950/95 backdrop-blur-md shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <button
-            onClick={() => scrollToSection('home')}
+            onClick={() => scrollToSection("home")}
             className="text-2xl font-bold text-white hover:text-emerald-400 transition-colors duration-300"
           >
             HK<span className="text-emerald-400">.</span>
@@ -53,7 +55,9 @@ const Header = ({ activeSection, onResumeClick }) => {
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={`text-sm font-medium transition-all duration-300 hover:text-emerald-400 ${
-                  activeSection === item.id ? 'text-emerald-400' : 'text-gray-300'
+                  activeSection === item.id
+                    ? "text-emerald-400"
+                    : "text-gray-300"
                 }`}
               >
                 {item.label}
@@ -85,8 +89,8 @@ const Header = ({ activeSection, onResumeClick }) => {
                 onClick={() => scrollToSection(item.id)}
                 className={`block w-full text-left py-2 px-4 rounded-lg transition-all duration-300 ${
                   activeSection === item.id
-                    ? 'bg-emerald-500/20 text-emerald-400'
-                    : 'text-gray-300 hover:bg-slate-800'
+                    ? "bg-emerald-500/20 text-emerald-400"
+                    : "text-gray-300 hover:bg-slate-800"
                 }`}
               >
                 {item.label}
