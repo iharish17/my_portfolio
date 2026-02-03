@@ -19,7 +19,8 @@ const Header = ({ activeSection, onResumeClick }) => {
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'experience', label: 'Experience' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'contact', label: 'Contact' },
+    { id: 'awards', label: 'Achievements' }
   ];
 
   const scrollToSection = (sectionId) => {
