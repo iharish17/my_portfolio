@@ -9,6 +9,7 @@ const Header = ({ activeSection, onResumeClick }) => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -23,10 +24,20 @@ const Header = ({ activeSection, onResumeClick }) => {
     { id: "contact", label: "Contact" },
   ];
 
+  // ✅ FIXED SCROLL FUNCTION (with navbar offset)
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
+
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const headerOffset = 100; // adjust if your header height is different
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+
       setIsMobileMenuOpen(false);
     }
   };
@@ -63,6 +74,7 @@ const Header = ({ activeSection, onResumeClick }) => {
                 {item.label}
               </button>
             ))}
+
             <button
               onClick={onResumeClick}
               className="px-5 py-2 bg-emerald-500 text-white rounded-lg font-medium hover:bg-emerald-600 transition-all duration-300 hover:scale-105"
@@ -96,6 +108,7 @@ const Header = ({ activeSection, onResumeClick }) => {
                 {item.label}
               </button>
             ))}
+
             <button
               onClick={() => {
                 onResumeClick();

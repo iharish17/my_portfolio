@@ -1,50 +1,78 @@
-import React from 'react';
-import { ExternalLink, Folder } from 'lucide-react';
+import React from "react";
+import { ExternalLink, Folder, Globe } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Digital Signature Web App',
+      title: "Digital Signature Web App",
       description: [
-        'Developed a secure digital signature system enabling users to upload, sign, and download document.',
-        'Integrated JWT-based authentication to prevent unauthorized access.'
+        "Developed a secure digital signature system enabling users to upload, sign, and download document.",
+        "Integrated JWT-based authentication to prevent unauthorized access.",
       ],
-      tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'JWT', ],
-      category: 'Full Stack',
-      link: 'https://github.com/iharish17/frontend-signature'
+      tags: ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "JWT"],
+      category: "Full Stack",
+      link: "https://github.com/iharish17/frontend-signature",
+      live: "https://signmate.vercel.app",
     },
     {
-      title: 'Freelancing Platform',
-       description: [
-        'Built a full-stack freelancing platform supporting freelancer and client user roles.',
-        'Implemented secure registration, login, and role-based access control.',
-        'Developed gig creation, order management, and freelancer dashboard features.',
-        'Enabled structured workflow for order tracking and activity management.'
-      ],
-      tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'REST APIs',],
-      category: 'Full Stack',
-      link: 'https://github.com/iharish17/freelancersHUB'
-    },
-    {
-      title: 'Face & Gender Detection System',
+      title: "Freelancing Platform",
       description: [
-        'Developed a computer vision application to detect faces and predict gender from images and live webcam feed.',
-         'Utilized deep learning–based face detection models for accurate classification.'
-        ],
-      tags: ['Python', 'Flask', 'NumPy', 'OpenCV', 'HTML', 'CSS', 'Deep Learning'],
-      category: 'AI/ML',
-      link: 'https://github.com/iharish17/Face_Detection'
+        "Built a full-stack freelancing platform supporting freelancer and client user roles.",
+        "Implemented secure registration, login, and role-based access control.",
+        "Developed gig creation, order management, and freelancer dashboard features.",
+        "Enabled structured workflow for order tracking and activity management.",
+      ],
+      tags: [
+        "React",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "REST APIs",
+      ],
+      category: "Full Stack",
+      link: "https://github.com/iharish17/freelancersHUB",
+      live: "https://freelancers-hub.vercel.app",
     },
     {
-      title: 'YOLOv8 Object Detection System',
-       description: [
-        'Built an object detection application supporting image uploads and real-time webcam detection.',
-        'Implemented YOLOv8 for fast and accurate multi-object recognition.',
-        'Achieved reliable inference performance for detecting people and common objects.'
+      title: "LinkHub",
+      description: [
+        "Developed a LinkHub platform where users can create a single profile page to showcase and manage all their important social and professional links.",
+        "Integrated Supabase for authentication and data handling, enabling secure sign-in and seamless profile updates.",
+        "Created a clean and responsive interface with multiple social media icons, optimized for both mobile and desktop viewing.",
       ],
-      tags: ['Python', 'Flask', 'YOLOv8', 'OpenCV', 'Computer Vision'],
-      category: 'AI/ML',
-      link: 'https://github.com/iharish17/Object_Detection'
+      tags: [
+        "Typescript",
+        "Tailwind CSS",
+        "Javascript",
+        "Supabase (PostgreSQL + Auth + Storage)",
+        "Vercel",
+      ],
+      category: "Full Stack",
+      link: "https://github.com/iharish17/LinkHub",
+      live: "https://link-branch.vercel.app",
+    },
+    {
+      title: "Face & Gender Detection System",
+      description: [
+        "Developed a computer vision application to detect faces and predict gender from images and live webcam feed.",
+        "Utilized deep learning–based face detection models for accurate classification.",
+      ],
+      tags: ["Python", "Flask", "NumPy", "OpenCV", "HTML", "CSS", "Deep Learning"],
+      category: "AI/ML",
+      link: "https://github.com/iharish17/Face_Detection",
+    },
+    {
+      title: "YOLOv8 Object Detection System",
+      description: [
+        "Built an object detection application supporting image uploads and real-time webcam detection.",
+        "Implemented YOLOv8 for fast and accurate multi-object recognition.",
+        "Achieved reliable inference performance for detecting people and common objects.",
+      ],
+      tags: ["Python", "Flask", "YOLOv8", "OpenCV", "Computer Vision"],
+      category: "AI/ML",
+      link: "https://github.com/iharish17/Object_Detection",
     },
   ];
 
@@ -72,22 +100,47 @@ const Projects = () => {
                       {project.category}
                     </span>
                   </div>
-                  {project.link && (
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 text-gray-400 hover:text-emerald-400 transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                  )}
+
+                  {/* ✅ Icons Section */}
+                  <div className="flex gap-3">
+                    {/* GitHub Link */}
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 text-gray-400 hover:text-emerald-400 transition-colors duration-300"
+                        title="GitHub Repo"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
+
+                    {/* Live Link */}
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 text-gray-400 hover:text-emerald-400 transition-colors duration-300"
+                        title="Live Demo"
+                      >
+                        <Globe size={20} />
+                      </a>
+                    )}
+                  </div>
                 </div>
 
                 <h3 className="text-xl font-semibold mb-3 group-hover:text-emerald-400 transition-colors duration-300">
                   {project.title}
                 </h3>
-                <p className="text-gray-400 mb-6 leading-relaxed">{project.description}</p>
+
+                {/* FIX: description is array so map it */}
+                <ul className="text-gray-400 mb-6 leading-relaxed list-disc pl-5 space-y-2">
+                  {project.description.map((line, idx) => (
+                    <li key={idx}>{line}</li>
+                  ))}
+                </ul>
 
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, idx) => (

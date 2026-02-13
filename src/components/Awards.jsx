@@ -1,5 +1,5 @@
 import React from "react";
-import { Trophy, Award, Star } from "lucide-react";
+import { Trophy, Award, Star, Badge } from "lucide-react";
 
 const Awards = () => {
   const awardsData = [
@@ -23,6 +23,13 @@ const Awards = () => {
       description:
         "Qualified as finalist in multiple national-level hackathons.",
       details: ["RIFT'26", "Hack-Nocturne 2.0", "DU Hacks", "HackX", "Certificates of Appreciation"],
+    },
+    {
+      title: "Campus Mantri",
+      icon: Badge,
+      description:
+        "Contributing as a Campus Ambassador at GeeksforGeeks ",
+      details: ["Leadership", "Communication", "Assisting"],
     },
   ];
 
