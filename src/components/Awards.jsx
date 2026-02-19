@@ -22,7 +22,7 @@ const Awards = () => {
       icon: Star,
       description:
         "Qualified as finalist in multiple national-level hackathons.",
-      details: ["RIFT'26", "Hack-Nocturne 2.0", "DU Hacks", "HackX", "Certificates of Appreciation"],
+      details: ["RIFT'26", "Hack-Nocturne 2.0", "DU Hacks", "HackX", "AceHack 5.0"],
     },
     {
       title: "Campus Mantri",
