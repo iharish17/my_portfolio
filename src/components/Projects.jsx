@@ -146,7 +146,8 @@ const Projects = () => {
                   {project.tags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className="px-3 py-1 bg-slate-800 text-gray-400 rounded-lg text-xs font-medium"
+                      className="px-3 py-1 bg-slate-800 text-gray-400 rounded-lg text-sm font-medium hover:bg-emerald-500/20 hover:text-emerald-400
+                      transition"
                     >
                       {tag}
                     </span>

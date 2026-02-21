@@ -1,8 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { X, Download, ExternalLink } from 'lucide-react';
 
 const ResumeModal = ({ isOpen, onClose }) => {
-  const resumeUrl = './resume.pdf';
+  const resumeUrl = '/resume.pdf'; // Put resume.pdf inside public folder
+
+  // 🔥 ESC Key Close
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.key === 'Escape') {
+        onClose();
+      }
+    };
+
+    if (isOpen) {
+      window.addEventListener('keydown', handleEsc);
+    }
+
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+    };
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -20,14 +37,15 @@ const ResumeModal = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-      <div className="bg-slate-900 rounded-2xl shadow-2xl w-full max-w-5xl max-h-[90vh] flex flex-col border border-slate-800">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-white/10 backdrop-blur-xl">
+      <div className="bg-white/10 rounded-2xl shadow-2xl w-full max-w-5xl max-h-[90vh] flex flex-col border border-white/20">
+        
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-slate-800">
           <h2 className="text-2xl font-bold text-white">Resume Preview</h2>
           <button
             onClick={onClose}
-            className="p-2 text-gray-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all duration-300"
+            className="p-2 text-white hover:text-emerald-400"
           >
             <X size={24} />
           </button>
@@ -53,6 +71,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
             <ExternalLink size={20} />
             View in New Tab
           </button>
+
           <button
             onClick={handleDownload}
             className="flex items-center gap-2 px-6 py-3 bg-emerald-500 text-white rounded-lg font-medium hover:bg-emerald-600 transition-all duration-300 hover:scale-105"

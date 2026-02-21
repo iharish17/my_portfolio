@@ -70,16 +70,16 @@ Message: ${message}`;
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-white/10 backdrop-blur-xl  border-white/20 px-4 "
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-lg rounded-xl bg-[#0f172a] p-6 shadow-xl"
+        className="relative w-full max-w-lg rounded-xl bg-white/10 p-6 shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute right-4 top-4 text-gray-400 hover:text-white"
+          className="absolute right-4 top-4 text-white hover:text-emerald-400"
         >
           <X size={20} />
         </button>
@@ -94,7 +94,7 @@ Message: ${message}`;
             placeholder="Your Name"
             value={form.name}
             onChange={handleChange}
-            className="w-full rounded-md bg-[#020617] px-4 py-3 text-white ring-1 ring-gray-700 focus:ring-emerald-500 outline-none"
+            className="w-full rounded-md bg-black/40 px-4 py-3 text-white ring-1 ring-gray-700 focus:ring-emerald-500 outline-none"
           />
 
           <input
@@ -103,7 +103,7 @@ Message: ${message}`;
             placeholder="Your Email"
             value={form.email}
             onChange={handleChange}
-            className="w-full rounded-md bg-[#020617] px-4 py-3 text-white ring-1 ring-gray-700 focus:ring-emerald-500 outline-none"
+            className="w-full rounded-md bg-black/40 px-4 py-3 text-white ring-1 ring-gray-700 focus:ring-emerald-500 outline-none"
           />
 
           <textarea
@@ -112,7 +112,7 @@ Message: ${message}`;
             placeholder="Your Message"
             value={form.message}
             onChange={handleChange}
-            className="w-full rounded-md bg-[#020617] px-4 py-3 text-white ring-1 ring-gray-700 focus:ring-emerald-500 outline-none"
+            className="w-full rounded-md bg-black/40 px-4 py-3 text-white ring-1 ring-gray-700 focus:ring-emerald-500 outline-none"
           />
 
           <button

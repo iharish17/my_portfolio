@@ -21,6 +21,7 @@ const Header = ({ activeSection, onResumeClick }) => {
     { id: "projects", label: "Projects" },
     { id: "experience", label: "Experience" },
     { id: "awards", label: "Achievements" },
+    { id: "certifications", label: "Certifications" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -31,7 +32,8 @@ const Header = ({ activeSection, onResumeClick }) => {
     if (element) {
       const headerOffset = 100; // adjust if your header height is different
       const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
 
       window.scrollTo({
         top: offsetPosition,
@@ -54,9 +56,17 @@ const Header = ({ activeSection, onResumeClick }) => {
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection("home")}
-            className="text-2xl font-bold text-white hover:text-emerald-400 transition-colors duration-300"
+            className="flex items-center gap-3"
           >
-            HK<span className="text-emerald-400">.</span>
+            <img
+              src="/logo.png"
+              alt="Harish Kumar Logo"
+              className="h-9 w-auto object-contain"
+            />
+
+            <span className="text-xl font-bold text-white">
+              Harish <span className="text-emerald-400">Kumar</span>
+            </span>
           </button>
 
           {/* Desktop Navigation */}

@@ -22,7 +22,7 @@ const Awards = () => {
       icon: Star,
       description:
         "Qualified as finalist in multiple national-level hackathons.",
-      details: ["RIFT'26", "Hack-Nocturne 2.0", "DU Hacks", "HackX", "AceHack 5.0"],
+      details: ["RIFT'26", "Hack-Nocturne 2.0", "DU Hacks", "AceHack 5.0"],
     },
     {
       title: "Campus Mantri",
@@ -34,7 +34,7 @@ const Awards = () => {
   ];
 
   return (
-    <section id="awards" className="py-24 px-6 bg-slate-950">
+    <section id="awards" className="py-24 px-6 bg-slate-900">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
           My <span className="text-emerald-400">Awards & Achievements</span>
@@ -48,7 +48,7 @@ const Awards = () => {
             return (
               <div
                 key={index}
-                className="bg-slate-900 p-6 rounded-xl border border-slate-800
+                className="bg-slate-950 p-6 rounded-xl border border-slate-800
                 hover:border-emerald-400/50 hover:scale-105 transition-all"
               >
                 {/* Header: Icon + Title */}
