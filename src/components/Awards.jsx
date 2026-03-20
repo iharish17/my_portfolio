@@ -18,11 +18,11 @@ const Awards = () => {
       details: ["Cricket", "Team Work", "Medal", "Certificate of Achivement"],
     },
     {
-      title: "4x National Hackathon Finalist",
+      title: "5x National Hackathon Finalist",
       icon: Star,
       description:
         "Qualified as finalist in multiple national-level hackathons.",
-      details: ["RIFT'26", "Hack-Nocturne 2.0", "DU Hacks", "AceHack 5.0"],
+      details: ["RIFT'26", "Hack-Nocturne 2.0", "DU Hacks", "AceHack 5.0", "Hacksagon 2026"],
     },
     {
       title: "Campus Mantri",
