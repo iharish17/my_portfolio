@@ -36,7 +36,7 @@ const Projects = () => {
       live: "https://freelancers-hub.vercel.app",
     },
     {
-      title: "LinkHub",
+      title: "LinkNest",
       description: [
         "Developed a LinkHub platform where users can create a single profile page to showcase and manage all their important social and professional links.",
         "Integrated Supabase for authentication and data handling, enabling secure sign-in and seamless profile updates.",
@@ -51,7 +51,7 @@ const Projects = () => {
       ],
       category: "Full Stack",
       link: "https://github.com/iharish17/LinkHub",
-      live: "https://link-branch.vercel.app",
+      live: "https://link-nestify.vercel.app",
     },
     {
       title: "Face & Gender Detection System",
