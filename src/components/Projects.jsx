@@ -1,5 +1,5 @@
 import React from "react";
-import { ExternalLink, Folder, Globe } from "lucide-react";
+import { Github, Folder, Globe } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -112,7 +112,7 @@ const Projects = () => {
                         className="p-2 text-gray-400 hover:text-emerald-400 transition-colors duration-300"
                         title="GitHub Repo"
                       >
-                        <ExternalLink size={20} />
+                        <Github size={20} />
                       </a>
                     )}
 
