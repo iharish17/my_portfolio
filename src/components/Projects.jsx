@@ -1,5 +1,5 @@
 import React from "react";
-import { ExternalLink, Folder, Globe } from "lucide-react";
+import { Github, Folder, Globe } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -57,20 +57,8 @@ const Projects = () => {
         "Vercel",
       ],
       category: "Full Stack",
-      link: "https://github.com/iharish17/LinkNest",
-      live: "https://link-nestify.vercel.app",
-    },
-    {
-      title: "CleanSphere",
-      description: [
-        "Information Coming Soon (Working on it!)",
-      ],
-      tags: [
-        "Working on it!",
-      ],
-      category: "Full Stack",
-      link: "#",
-      live: "#",
+      link: "https://github.com/iharish17/LinkHub",
+      live: "https://link-branch.vercel.app",
     },
     {
       title: "Face & Gender Detection System",
@@ -139,7 +127,7 @@ const Projects = () => {
                         className="p-2 text-gray-400 hover:text-emerald-400 transition-colors duration-300"
                         title="GitHub Repo"
                       >
-                        <ExternalLink size={20} />
+                        <Github size={20} />
                       </a>
                     )}
 
