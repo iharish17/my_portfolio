@@ -92,7 +92,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 px-6 bg-slate-900">
+    <section id="projects" className="py-24 px-6 glass-section">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
           Featured <span className="text-emerald-400">Projects</span>
@@ -103,7 +103,8 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-slate-950 rounded-xl border border-slate-800 overflow-hidden hover:border-emerald-400/50 transition-all duration-300 group hover:transform hover:scale-[1.02]"
+              className="portfolio-card reveal-card overflow-hidden group"
+              style={{ "--reveal-delay": `${index * 90}ms` }}
             >
               <div className="p-6">
                 <div className="flex items-start justify-between mb-4">

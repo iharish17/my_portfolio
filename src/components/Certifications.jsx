@@ -58,7 +58,7 @@ const Certifications = () => {
   };
 
   return (
-    <section id="certifications" className="py-24 px-6 bg-slate-950">
+    <section id="certifications" className="py-24 px-6 glass-section">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
           My <span className="text-emerald-400">Certifications</span>
@@ -67,20 +67,10 @@ const Certifications = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certificationsData.map((cert, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{
-                rotateX: 5,
-                rotateY: -5,
-                scale: 1.05,
-              }}
-              className="bg-slate-900 p-6 rounded-xl border border-slate-800
-              hover:border-emerald-400/50 transition-all duration-500
-              perspective-1000"
+              className="portfolio-card reveal-card"
+              style={{ "--reveal-delay": `${index * 90}ms` }}
             >
               {/* Header */}
               <div className="flex items-center justify-between mb-4">
@@ -132,7 +122,7 @@ const Certifications = () => {
                 <ExternalLink size={16} />
                 View Certificate
               </button>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

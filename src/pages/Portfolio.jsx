@@ -14,6 +14,36 @@ const Portfolio = () => {
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
+  useEffect(() => {
+    const cards = document.querySelectorAll(".reveal-card");
+    if (!cards.length) {
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+          } else {
+            entry.target.classList.remove("is-visible");
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+        rootMargin: "0px 0px -8% 0px",
+      }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+
+    return () => {
+      cards.forEach((card) => observer.unobserve(card));
+      observer.disconnect();
+    };
+  }, []);
+
  useEffect(() => {
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
@@ -62,7 +92,7 @@ const Portfolio = () => {
 }, []);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
+    <div className="min-h-screen portfolio-glass-bg text-white">
       <Header
         activeSection={activeSection}
         onResumeClick={() => setIsResumeModalOpen(true)}

@@ -4,6 +4,7 @@ import "./App.css";
 
 import Portfolio from "./pages/Portfolio";
 import Loader from "./components/Loader";
+import ToastCenter from "./components/ToastCenter";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -19,6 +20,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       )}
+      <ToastCenter />
     </div>
   );
 }

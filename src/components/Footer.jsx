@@ -2,9 +2,15 @@ import React, { useState } from 'react';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 import { SiGeeksforgeeks, SiDiscord } from 'react-icons/si';
 import ContactModal from './ContactModal'; 
+import { toast } from './ToastCenter';
 
 const Footer = () => {
   const [openContact, setOpenContact] = useState(false);
+
+  const handleContactClick = () => {
+    toast({ type: 'info', message: 'Opening contact form...' });
+    setOpenContact(true);
+  };
 
   const socialLinks = [
 { icon: Github, url: 'https://github.com/iharish17', label: 'GitHub' },
@@ -16,8 +22,8 @@ const Footer = () => {
 
   return (
     <>
-      <footer id="contact" className="bg-slate-900 border-t  border-slate-800 py-10 px-6">
-        <div className="max-w-6xl mx-auto">
+      <footer id="contact" className="glass-section border-t border-white/10 py-10 px-6">
+        <div className="max-w-6xl mx-auto glass-surface rounded-2xl p-8 md:p-10">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-4">
               Let's <span className="text-emerald-400">Connect</span>
@@ -28,7 +34,7 @@ const Footer = () => {
             </p>
 
             <button
-              onClick={() => setOpenContact(true)}
+              onClick={handleContactClick}
               className="inline-block px-8 py-3 bg-emerald-500 text-white rounded-lg font-medium hover:bg-emerald-600 transition-all duration-300 hover:scale-105"
             >
               Contact Me

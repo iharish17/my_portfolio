@@ -48,7 +48,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 px-6 bg-slate-950">
+    <section id="skills" className="py-24 px-6 glass-section">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
           My <span className="text-emerald-400">Skills</span>
@@ -61,7 +61,8 @@ const Skills = () => {
             return (
               <div
                 key={index}
-                className="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-emerald-400/50 transition-all duration-300 hover:transform hover:scale-105 group"
+                className="portfolio-card reveal-card group"
+                style={{ "--reveal-delay": `${index * 90}ms` }}
               >
                 <div className="flex items-center mb-6">
                   <div className="p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-all duration-300">

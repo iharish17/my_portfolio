@@ -43,7 +43,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-24 px-6 bg-slate-950">
+    <section id="experience" className="py-24 px-6 glass-section">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
           My <span className="text-emerald-400">Experience</span>
@@ -69,7 +69,10 @@ const Experience = () => {
                   <div className={`md:flex ${isEven ? 'flex-row' : 'flex-row-reverse'} items-center`}>
                     <div className="md:w-1/2"></div>
                     <div className="md:w-1/2 md:px-8">
-                      <div className="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-emerald-400/50 transition-all duration-300 hover:transform hover:scale-105">
+                      <div
+                        className="portfolio-card reveal-card"
+                        style={{ "--reveal-delay": `${index * 90}ms` }}
+                      >
                         <div className="flex items-start mb-4">
                           <div className="md:hidden p-2 bg-emerald-500/10 rounded-lg mr-4">
                             <Icon className="text-emerald-400" size={24} />

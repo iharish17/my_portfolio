@@ -45,6 +45,20 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+## Contact Form Setup (Web3Forms)
+
+The contact modal submits messages through Web3Forms.
+
+1. Create a free access key at [Web3Forms](https://web3forms.com/).
+2. Create a `.env` file in the project root.
+3. Add this variable:
+
+```
+REACT_APP_WEB3FORMS_ACCESS_KEY=YOUR_WEB3FORMS_ACCESS_KEY
+```
+
+4. Restart the dev server.
+
 ### Code Splitting
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)

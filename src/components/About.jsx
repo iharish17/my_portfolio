@@ -9,7 +9,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 px-6 bg-slate-900">
+    <section id="about" className="py-24 px-6 glass-section">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
           About <span className="text-emerald-400">Me</span>
@@ -40,7 +40,7 @@ const About = () => {
 
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold text-emerald-400">Education</h3>
-            <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-400/50 transition-all duration-300">
+            <div className="portfolio-card reveal-card" style={{ "--reveal-delay": "0ms" }}>
               <div className="flex items-start justify-between mb-3">
                 <div>
                   <h4 className="text-xl font-semibold text-white">B. Tech CS-AIML</h4>
@@ -51,7 +51,7 @@ const About = () => {
               <p className="text-gray-400">CGPA: <span className="text-emerald-400 font-semibold">8.43</span> (1st Year)</p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-400/50 transition-all duration-300">
+            <div className="portfolio-card reveal-card" style={{ "--reveal-delay": "90ms" }}>
               <div className="flex items-start justify-between mb-3">
                 <div>
                   <h4 className="text-xl font-semibold text-white">Class XII</h4>
@@ -62,7 +62,7 @@ const About = () => {
               <p className="text-gray-400">Percentage: <span className="text-emerald-400 font-semibold">78%</span></p>
             </div>
 
-            <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-400/50 transition-all duration-300">
+            <div className="portfolio-card reveal-card" style={{ "--reveal-delay": "180ms" }}>
               <div className="flex items-start justify-between mb-3">
                 <div>
                   <h4 className="text-xl font-semibold text-white">Class X</h4>
@@ -81,7 +81,8 @@ const About = () => {
             return (
               <div
                 key={index}
-                className="bg-slate-800 p-8 rounded-xl text-center border border-slate-700 hover:border-emerald-400/50 transition-all duration-300 hover:transform hover:scale-105"
+                className="portfolio-card reveal-card text-center"
+                style={{ "--reveal-delay": `${index * 90}ms` }}
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-emerald-500/10 rounded-full mb-4">
                   <Icon className="text-emerald-400" size={32} />

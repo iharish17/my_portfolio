@@ -132,17 +132,20 @@
   }
 }
 .zoom-out {
-  animation: zoomOutEffect 0.8s ease-in-out forwards;
   background: radial-gradient(circle at top, #0b1220, #040812 70%);
 }
 
-@keyframes zoomOutEffect {
+.zoom-out .loader-wrapper {
+  animation: loaderExit 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes loaderExit {
   0% {
     transform: scale(1);
     opacity: 1;
   }
   100% {
-    transform: scale(1.4);
+    transform: scale(1.08);
     opacity: 0;
   }
 }

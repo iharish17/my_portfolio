@@ -34,7 +34,7 @@ const Awards = () => {
   ];
 
   return (
-    <section id="awards" className="py-24 px-6 bg-slate-900">
+    <section id="awards" className="py-24 px-6 glass-section">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
           My <span className="text-emerald-400">Awards & Achievements</span>
@@ -48,8 +48,8 @@ const Awards = () => {
             return (
               <div
                 key={index}
-                className="bg-slate-950 p-6 rounded-xl border border-slate-800
-                hover:border-emerald-400/50 hover:scale-105 transition-all"
+                className="portfolio-card reveal-card"
+                style={{ "--reveal-delay": `${index * 90}ms` }}
               >
                 {/* Header: Icon + Title */}
                 <div className="flex items-center gap-4 mb-4">
