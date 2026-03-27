@@ -3,7 +3,7 @@ import { GraduationCap, Award, Code } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: Code, label: 'Projects Completed', value: '3+' },
+    { icon: Code, label: 'Projects Completed', value: '5+' },
     { icon: Award, label: 'Certifications', value: '10+' },
     { icon: GraduationCap, label: 'CGPA', value: '8.43 (First Year)' }
   ];

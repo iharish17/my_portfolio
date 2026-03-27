@@ -1,17 +1,6 @@
 import React from 'react';
-import { Github, Linkedin, Mail,} from 'lucide-react';
-import { SiGeeksforgeeks } from "react-icons/si";
-import { FaXTwitter } from "react-icons/fa6";
 
-const Hero = ({ onResumeClick }) => {
-  const socialLinks = [
-    { icon: Github, url: 'https://github.com/iharish17', label: 'GitHub' },
-    { icon: Linkedin, url: 'https://www.linkedin.com/in/harishk18', label: 'LinkedIn' },
-    { icon: Mail, url: 'mailto:harishk3445@gmail.com', label: 'Email' },
-    { icon: SiGeeksforgeeks , url: 'https://www.geeksforgeeks.org/profile/harishk19', label: 'GeeksforGeeks' },
-    { icon: FaXTwitter, url: 'https://x.com/HarishKuma53444', label: 'FaXTwitter' },
-  ];
-
+const Hero = ({ onResumeClick, socialLinks = [] }) => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
