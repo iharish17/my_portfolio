@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
-import { SiGeeksforgeeks, SiDiscord } from 'react-icons/si';
+import { SiGeeksforgeeks } from 'react-icons/si';
+import { FaXTwitter } from "react-icons/fa6";
 import ContactModal from './ContactModal'; 
 import { toast } from './ToastCenter';
 
@@ -17,13 +18,13 @@ const Footer = () => {
     { icon: Linkedin, url: 'https://www.linkedin.com/in/harishk18', label: 'LinkedIn' },
     { icon: Mail, url: 'mailto:harishk3445@gmail.com', label: 'Email' },
     { icon: SiGeeksforgeeks, url: 'https://www.geeksforgeeks.org/profile/harishk19', label: 'GeeksforGeeks' },
-    { icon: SiDiscord, url: 'https://discord.com/channels/hey.harish', label: 'Discord' },
+    { icon: FaXTwitter, url: 'https://x.com/HarishKuma53444', label: 'FaXTwitter' },
   ];
 
   return (
     <>
       <footer id="contact" className="glass-section border-t border-white/10 py-10 px-6">
-        <div className="max-w-6xl mx-auto glass-surface rounded-2xl p-8 md:p-10">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-4">
               Let's <span className="text-emerald-400">Connect</span>
