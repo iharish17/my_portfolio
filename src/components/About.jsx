@@ -22,7 +22,7 @@ const About = () => {
             <p className="text-gray-400 leading-relaxed">
               I'm a passionate B.Tech student specializing in Computer Science with Artificial Intelligence and Machine Learning 
               at Kanpur Institute of Technology. With hands-on experience in full-stack development and AI/ML projects, 
-              I love turning ideas into reality through code.
+              I love turning ideas into reality through code. "I LOVE VIBE CODING"
             </p>
             <p className="text-gray-400 leading-relaxed">
               As a Full Stack Intern at Labmentix, I've worked on real-world applications using the MERN stack, 

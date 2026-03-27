@@ -30,7 +30,7 @@ const Hero = ({ onResumeClick }) => {
                 Harish Kumar
               </h1>
               <p className="text-2xl md:text-3xl text-gray-400 font-light mb-8">
-                Full Stack Developer & AI/ML Enthusiast
+                Full Stack Developer & VIBE CODER
               </p>
               <p className="text-lg text-gray-500 max-w-2xl md:max-w-xl md:mx-0 mx-auto mb-12">
                 B.Tech CS-AIML Student passionate about building innovative web applications and exploring artificial intelligence.
