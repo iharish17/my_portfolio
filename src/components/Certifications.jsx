@@ -27,7 +27,7 @@ const Certifications = () => {
         "https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg",
       pdf: "/certificate-accenture.pdf",
       verified: true,
-      details: ["software Engineering", "Coding challenges", "Projects"],
+      details: ["Software Engineering", "Coding challenges", "Projects"],
     },
     {
       title: "Solutions Architecture Job Simulationby Forage",
