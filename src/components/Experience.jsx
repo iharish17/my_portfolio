@@ -1,11 +1,12 @@
 import React from 'react';
-import { Briefcase, Users, Award,} from 'lucide-react';
+import { Briefcase,  Award,} from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
       {
       title: 'Campus Mantri (Campus Ambassador)',
       company: 'GeeksforGeeks',
+      companyUrl: 'https://www.geeksforgeeks.org',
       location: 'Remote',
       period: '2024 - Present',
       icon: Award,
@@ -15,20 +16,9 @@ const Experience = () => {
       ]
     },
     {
-      title: 'Co-Organizer',
-      company: 'HACKtoLEARN',
-      location: 'Part-Time (Remote)',
-      period: 'Oct 2024 - Dec 2024',
-      icon: Users,
-      description: [
-        'Assisted in planning and executing an online hackathon with 500+ participants.',
-        'Managed participant onboarding, team coordination, and communication workflows.',
-        'Coordinated with mentors for problem statements, evaluations, and final result announcements.'
-      ]
-    },
-    {
       title: 'Full Stack Intern',
       company: 'Labmentix',
+      companyUrl: 'https://www.labmentix.in',
       location: 'Remote Internship',
       period: 'Jun 2025 - Aug 2025',
       icon: Briefcase,
@@ -79,7 +69,14 @@ const Experience = () => {
                           </div>
                           <div className="flex-1">
                             <h3 className="text-xl font-semibold text-white mb-1">{exp.title}</h3>
-                            <p className="text-emerald-400 font-medium">{exp.company}</p>
+                            <a 
+                              href={exp.companyUrl} 
+                              target="_blank" 
+                              rel="noopener noreferrer" 
+                              className="text-emerald-400 font-medium hover:text-emerald-300 hover:underline transition"
+                            >
+                              {exp.company}
+                            </a>
                             <div className="flex items-center gap-4 mt-2 text-sm text-gray-500">
                               <span>{exp.location}</span>
                               <span>•</span>

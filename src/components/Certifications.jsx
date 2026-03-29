@@ -90,8 +90,8 @@ const Certifications = () => {
 
                 {/* Shimmer Verified Badge */}
                 {cert.verified && (
-                  <div className="relative">
-                    <CheckCircle size={20} className="text-emerald-400" />
+                  <div className="relative" title="Verified">
+                    <CheckCircle size={20} className="text-emerald-400" title="Verified" />
                     <span className="absolute inset-0 shimmer rounded-full"></span>
                   </div>
                 )}
