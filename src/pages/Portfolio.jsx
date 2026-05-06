@@ -9,6 +9,7 @@ import Awards from "../components/Awards";
 import Certifications from "../components/Certifications";
 import Footer from "../components/Footer";
 import ResumeModal from "../components/ResumeModal";
+import CustomCursor from "../components/CustomCursor";
 
 const Portfolio = () => {
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
@@ -93,6 +94,7 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen portfolio-glass-bg text-white">
+      <CustomCursor />
       <Header
         activeSection={activeSection}
         onResumeClick={() => setIsResumeModalOpen(true)}

@@ -29,7 +29,7 @@ const Awards = () => {
       icon: Badge,
       description:
         "Contributing as a Campus Ambassador at GeeksforGeeks ",
-      details: ["Leadership", "Communication", "Assisting"],
+      details: ["Leadership", "Communication", "AIR 217", "Letter of Recommendation"],
     },
   ];
 
