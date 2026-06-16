@@ -8,6 +8,28 @@ const Certifications = () => {
 
   const certificationsData = [
     {
+      title: "AI Fluency: Frameworks and Foundations",
+      description:
+        "Completed the AI Fluency Certification by Anthropic, demonstrating proficiency in using Claude for various AI tasks.",
+      issuer: "Anthropic",
+      issuerLogo:
+        "https://coursera-university-assets.s3.amazonaws.com/87/4da64723554b21bbc04197c52063e6/Anthropic-4-.png",
+      pdf: "/AI-Fluency.pdf",
+      verified: true,
+      details: ["Claude Code", "AI Fluency"],
+    },
+    {
+      title: "Claude 101",
+      description:
+        "Completed the Claude 101 course by Anthropic, how it works and how it is used for.",
+      issuer: "Anthropic",
+      issuerLogo:
+        "https://coursera-university-assets.s3.amazonaws.com/87/4da64723554b21bbc04197c52063e6/Anthropic-4-.png",
+      pdf: "/Claude-101.pdf",
+      verified: true,
+      details: ["Claude 101", "AI Fundamentals"],
+    },
+    {
       title: "Python for Data Science",
       description:
         "Completed the course covering Python basics, data science libraries.",
@@ -91,15 +113,17 @@ const Certifications = () => {
                 {/* Shimmer Verified Badge */}
                 {cert.verified && (
                   <div className="relative" title="Verified">
-                    <CheckCircle size={20} className="text-emerald-400" title="Verified" />
+                    <CheckCircle
+                      size={20}
+                      className="text-emerald-400"
+                      title="Verified"
+                    />
                     <span className="absolute inset-0 shimmer rounded-full"></span>
                   </div>
                 )}
               </div>
 
-              <p className="text-gray-400 text-sm mb-5">
-                {cert.description}
-              </p>
+              <p className="text-gray-400 text-sm mb-5">{cert.description}</p>
 
               <div className="flex flex-wrap gap-2 mb-6">
                 {cert.details.map((item, idx) => (
@@ -138,7 +162,6 @@ const Certifications = () => {
             className="fixed inset-0 backdrop-blur-lg bg-white/10
             flex items-center justify-center z-50"
           >
-            
             <motion.div
               ref={modalRef}
               initial={{ scale: 0.8, opacity: 0 }}
@@ -155,9 +178,7 @@ const Certifications = () => {
                 <X />
               </button>
 
-              <h3 className="text-xl text-white mb-4">
-                {selectedCert.title}
-              </h3>
+              <h3 className="text-xl text-white mb-4">{selectedCert.title}</h3>
 
               <iframe
                 src={selectedCert.pdf}
