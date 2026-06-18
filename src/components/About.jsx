@@ -22,7 +22,7 @@ const About = () => {
             <p className="text-gray-400 leading-relaxed">
               I'm a passionate B.Tech student specializing in Computer Science with Artificial Intelligence and Machine Learning 
               at Kanpur Institute of Technology. With hands-on experience in full-stack development and AI/ML projects, 
-              I love turning ideas into reality through code. "I LOVE VIBE CODING"
+              I love turning ideas into reality through code
             </p>
             <p className="text-gray-400 leading-relaxed">
               As a Full Stack Intern at Labmentix, I've worked on real-world applications using the MERN stack, 
@@ -48,7 +48,7 @@ const About = () => {
                 </div>
                 <span className="text-gray-400 text-sm">2024 - 2028</span>
               </div>
-              <p className="text-gray-400">CGPA: <span className="text-emerald-400 font-semibold">8.43</span> (1st Year)</p>
+              <p className="text-gray-400">Current CGPA: <span className="text-emerald-400 font-semibold">8.22</span> </p>
             </div>
 
             <div className="portfolio-card reveal-card" style={{ "--reveal-delay": "90ms" }}>
